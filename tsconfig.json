@@ -1,13 +1,5 @@
 {
   "extends": "@tsconfig/svelte/tsconfig.json",
-  "baseUrl": ".",
-  "paths": {
-    "$app/*": [".svelte/dev/runtime/app/*", ".svelte/build/runtime/app/*"],
-    "$lib/*": ["src/lib/*"],
-    "$components/*": ["src/components/*"],
-    "$global/*": ["src/global/*"],
-    "$stores/*": ["src/stores/*"]
-  },
   "include": ["src/**/*"],
   "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
 }

@@ -56,10 +56,6 @@ export default {
 		// consult the documentation for details:
 		// https://github.com/rollup/plugins/tree/master/packages/commonjs
 		resolve({
-			alias: {
-				$components: resolve(),
-				$global: resolve(),
-			},
 			browser: true,
 			dedupe: ['svelte']
 		}),

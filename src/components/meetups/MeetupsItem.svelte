@@ -5,22 +5,25 @@
   
   <!--☰☰☰☰☰☰☰| HEADER |☰☰☰☰☰☰☰-->
   <header>
-    <h1>TITLE</h1>
-    <h2>SUBTITLE</h2>
+    <h1>{title}</h1>
+    <h2>{subtitle}</h2>
+    <p>{address}</p>
   </header>
   
   <!--☰☰☰☰☰☰☰| IMAGE |☰☰☰☰☰☰☰-->
   <div class="imgContainer">
-    <img alt="" src="">
+    <!--suppress HtmlUnknownTarget -->
+    <img alt={title} src={imageURL}>
   </div>
   
   <!--☰☰☰☰☰☰☰| CONTENT |☰☰☰☰☰☰☰-->
   <div class="contentContainer">
-    <p></p>
+    <p>{description}</p>
   </div>
   
   <!--☰☰☰☰☰☰☰| FOOTER |☰☰☰☰☰☰☰-->
   <footer>
+    <a href="mailto:{email}">Contact</a>
     <button>Show Details</button>
     <button>Favorite</button>
   </footer>
@@ -30,12 +33,15 @@
 <!-- ⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
 
 <!-- #™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
-<!-- ⚫️━━━━━━━━━ JS | TS ━━━━━━━━━⚫️ -->
-<script lang="ts">
+<script lang="ts">/** ⚫️━━━━━━━━━━━━━━━━━━ JS | TS ━━━━━━━━━━━━━━━━━━⚫️ */
 
-    /**: - ©MEMBER-PROPERTIES| */
     // #™━━━━━━━━━━━━━━━━━━━━━
-
+    export let title: string
+    export let subtitle: string
+    export let imageURL: string
+    export let description: string
+    export let address: string
+    export let email: string
     // #™━━━━━━━━━━━━━━━━━━━━━
 
     /**| ™- LABELED-STATEMENT |*/
@@ -51,10 +57,6 @@
 
 <!-- ⚫️━━━━━━━━━ CSS | SCSS | SASS ━━━━━━━━━⚫️ -->
 <style lang="scss">
-	@import '../../../public/styles/MeetUpsItem';
-
-  h1 {
-    color: mediumpurple;
-  }
+	@import '../../../public/styles/MeetupsItem';
 </style>
 <!-- ⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️⚫️━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
