@@ -1,0 +1,23 @@
+/* MeetupsGrid.scss */
+// ――――――――――――――――――――――――――――――――――――――――――――――――――――――
+/*――――――― (|  SCSS-VARIABLES  |) ―――――――*/
+
+// ――――――――――――――――――――――――――――――――――――――――――――――――――――――
+section {
+  //☰☰☰☰☰☰☰☰☰☰
+  margin-top: 5rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+
+  // ――――――― (|  inner styles  |) ―――――――
+
+}
+
+@media (min-width: 768px) {
+  //☰☰☰☰☰☰☰☰☰☰
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
