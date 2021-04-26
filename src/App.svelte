@@ -153,7 +153,6 @@
 
 <!-- ━━━━━━━━━ CSS | SCSS | SASS ━━━━━━━━━ -->
 <style lang="scss">
-	@import 'public/styles/App.scss';
 	@import '../public/styles/App';
 	
 	h1 {
