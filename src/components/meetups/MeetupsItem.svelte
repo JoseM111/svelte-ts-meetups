@@ -1,6 +1,7 @@
 <!-- ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ -->
 
 <script lang="ts">
+import Button from "../ui/Button.svelte";
     /** ⚫️━━━━━━━━━━━━━━━━━━ JS | TS ━━━━━━━━━━━━━━━━━━⚫️ */
 
     // #™━━━━━━━━━━━━━━━━━━━━━
@@ -46,10 +47,10 @@
   </div>
   
   <!--☰☰☰☰☰☰☰| FOOTER |☰☰☰☰☰☰☰-->
-  <footer>
-    <a href="mailto:{email}">Contact</a>
-    <button>Show Details</button>
-    <button>Favorite</button>
+  <footer class="footerButtons">
+    <Button class="" href="mailto:{email}" caption="Contact" />
+    <Button mode="outline" type="button" caption="Favorite" />
+    <Button type="button" caption="Show Details" />
   </footer>
   
   <!-- ━━━━━━━━━━━━━━━ CONTAINER ━━━━━━━━━━━━━━━ -->
