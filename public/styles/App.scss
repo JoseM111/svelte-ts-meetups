@@ -10,6 +10,21 @@
 .AppContainer {
 
 	/*------- (|  inner styles  |) -------*/
+	main {
+		margin-top: 5rem;
+	}
 
+	form {
+		width: 30rem;
+		max-width: 90%;
+		margin: auto;
+	}
 
+}
+
+@media (min-width: 768px) {
+	//☰☰☰☰☰☰☰☰☰☰
+	button {
+		margin-bottom: 1.5rem;
+	}
 }

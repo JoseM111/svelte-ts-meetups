@@ -4,6 +4,7 @@
     /** ⚫️━━━━━━━━━━━━━━━━━━ JS | TS ━━━━━━━━━━━━━━━━━━⚫️ */
 
     // #™━━━━━━━━━━━━━━━━━━━━━
+    export let id: string = ''
     export let title: string
     export let subtitle: string
     export let imageURL: string
@@ -18,7 +19,6 @@
     // #™━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
     /** #™━━━━━━━━━━━━━━━━━━━ FUNCTION ━━━━━━━━━━━━━━━━━━━ */
-
 
 </script>
 
@@ -37,7 +37,7 @@
   <!--☰☰☰☰☰☰☰| IMAGE |☰☰☰☰☰☰☰-->
   <div class="imgContainer">
     <!--suppress HtmlUnknownTarget -->
-    <img alt={title} src={imageURL}>
+    <img alt={title} src={imageURL} id={id}>
   </div>
   
   <!--☰☰☰☰☰☰☰| CONTENT |☰☰☰☰☰☰☰-->

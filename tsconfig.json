@@ -4,5 +4,11 @@
     "src/**/*",
     "node_modules/@types/node/globals.d.ts"
   ],
-  "exclude": ["node_modules/*", "__sapper__/*", "public/*"]
+  "exclude": ["node_modules/*", "__sapper__/*", "public/*"],
+  "compilerOptions": {
+    "lib": [
+      "esnext",
+      "dom"
+    ]
+  }
 }

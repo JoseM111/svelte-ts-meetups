@@ -1,13 +1,12 @@
 <!-- ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ -->
-
 <script lang="ts">
-    import MeetupsItemComponent from "./MeetupsItem.svelte";
-    import type { Meetup } from "../../global/types"
 
     /** ⚫️━━━━━━━━━━━━━━━━━━ JS | TS ━━━━━━━━━━━━━━━━━━⚫️ */
-    
+
+    /**: - ©MEMBER-PROPERTIES| */
     // |™═════════════════════════
-    export let meetups: Meetup[]
+    export let type: string
+    export let caption: string
     // |™═════════════════════════
 
     /**| ™- LABELED-STATEMENT |*/
@@ -17,29 +16,25 @@
 
     /** #™━━━━━━━━━━━━━━━━━━━ FUNCTION ━━━━━━━━━━━━━━━━━━━ */
 
+
 </script>
 
 <!-- ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ -->
 
-<section>
+<div class="ButtonContainer">
 	<!-- ━━━━━━━━━━━━━━━ CONTAINER ━━━━━━━━━━━━━━━ -->
-  
-  {#each meetups as meetup (meetup.id)}
-    <!---->
-    <MeetupsItemComponent
-      {...meetup}
-    />
-  {/each}
+
+	<button {type}>{caption}</button>
   
   <!-- ━━━━━━━━━━━━━━━ CONTAINER ━━━━━━━━━━━━━━━ -->
-</section>
+</div>
 
 <!-- ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ -->
 
 <!-- ⚫️━━━━━━━━━ CSS | SCSS | SASS ━━━━━━━━━⚫️ -->
 <style lang="scss">
-	@import 'public/styles/MeetupsGrid.scss';
+	@import 'public/styles/Button.scss';
+
 </style>
 
 <!-- ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ -->
-
