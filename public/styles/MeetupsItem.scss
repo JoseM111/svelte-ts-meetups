@@ -63,3 +63,12 @@
     text-align: right;
   }
 }
+
+@media (min-width: 768px) {
+  //☰☰☰☰☰☰☰☰☰☰
+  .MeetupsItemContainer {
+    width: 40rem;
+    max-width: 90%;
+    margin: auto;
+  }
+}

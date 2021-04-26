@@ -8,5 +8,11 @@ export type Meetup = {
     description: string
     imageURL: string
     address: string
-    contactEmail: string
+    email: string
 }
+
+export type InputTargetEvent = EventTarget & {
+    target: HTMLInputElement
+}
+
+
